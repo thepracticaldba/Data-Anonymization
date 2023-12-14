@@ -5,8 +5,8 @@ You're a DBA, sysadmin,devops engineer or developer who manages Microsoft SQL Se
 
 This process as a pre-requisite requires Microsoft's Data Discovery and Classifications feature to be enabled and implemented.
 
-__https://learn.microsoft.com/en-us/sql/relational-databases/security/sql-data-discovery-and-classification?view=sql-server-ver16&tabs=sql-powelshell_
+https://learn.microsoft.com/en-us/sql/relational-databases/security/sql-data-discovery-and-classification?view=sql-server-ver16&tabs=sql-powelshell
 
-_https://learn.microsoft.com/en-us/azure/azure-sql/database/data-discovery-and-classification-overview?view=azuresql__
+https://learn.microsoft.com/en-us/azure/azure-sql/database/data-discovery-and-classification-overview?view=azuresql
 
 Applying data classifications to the database stores the information in metadata tables and allows it to be retrieved which this process leverages to dynamically anonymize the identified tables and their columns.
