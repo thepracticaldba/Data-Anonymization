@@ -23,10 +23,10 @@ Applying data classifications to the database stores the information in metadata
 
 ## Steps to install the data anonymization procedures
 
-- 1.Enable and implement Microsoft's Data Discovery and Classifications feature
-- 2.Execute the script **InstallALL_usp_obfuscate.sql** in your target database (example: copy of Production database) which needs to be anonymized
-- 3.Execute the below procedures in sequence
--   EXEC [MASK].[usp_obfuscate_00]
-    EXEC [MASK].[usp_obfuscate_01] @ExclusionTableList='DUMMY_DATA', @ExclusionSchemaList='MASK'
-    EXEC [MASK].[usp_obfuscate_02] @TableName=NULL, @SchemaName=NULL
-    EXEC [MASK].[usp_obfuscate_03] 
+- Enable and implement Microsoft's Data Discovery and Classifications feature
+- Execute the script **InstallALL_usp_obfuscate.sql** in your target database (example: copy of Production database) which needs to be anonymized
+- Execute the below procedures in sequence
+   - EXEC [MASK].[usp_obfuscate_00]
+   - EXEC [MASK].[usp_obfuscate_01] @ExclusionTableList='DUMMY_DATA', @ExclusionSchemaList='MASK'
+   - EXEC [MASK].[usp_obfuscate_02] @TableName=NULL, @SchemaName=NULL
+   - EXEC [MASK].[usp_obfuscate_03] 
