@@ -27,7 +27,66 @@ Applying data classifications to the database stores the information in metadata
 - Enable and implement Microsoft's Data Discovery and Classifications feature
 - Execute the script **InstallALL_usp_obfuscate.sql** in your target database (example: copy of Production database) which needs to be anonymized
 - Execute the below procedures in sequence
+  
    - EXEC [MASK].[usp_obfuscate_00]
    - EXEC [MASK].[usp_obfuscate_01] @ExclusionTableList='DUMMY_DATA', @ExclusionSchemaList='MASK'
    - EXEC [MASK].[usp_obfuscate_02] @TableName=NULL, @SchemaName=NULL
-   - EXEC [MASK].[usp_obfuscate_03] 
+   - EXEC [MASK].[usp_obfuscate_03]
+
+## Detailed Description
+
+The script InstallALL_usp_obfuscate.sql installs a set of database objects (tables, views, stored procedures and scalar functions) under a new schema called MASK.
+
+**Tables:**
+
+DUMMY_DATA
+DataMaskingExclusionList
+DataMaskingScripts
+DataObfuscateList
+
+**Views:**
+
+vw_getNewID
+vw_getRandID
+
+**Scalar UDFs:**
+
+udf_getRandIPAddr
+udf_getRandUsername
+udf_getRandpwd
+udf_getRandmarks
+udf_getRandBankNum
+udf_getRandExpiryDate
+udf_getRandFirstName
+udf_getRandLastName
+udf_getRandURL
+udf_getRandPhoneNum
+udf_getRandMobNum
+udf_getRandCCNum
+udf_getRandCCType
+udf_getRandAmount
+udf_getRandAccID
+udf_getRandBankID
+udf_getRandSSN
+udf_getRandHealthRecord
+udf_getRandHealthNum
+udf_getRandPhoneNum_INT
+udf_getRandMobileNum_INT
+udf_getRandExpDate_Quantity
+udf_getRandEmail
+udf_getRandTown
+udf_getRandState
+udf_getRandCountry
+udf_getRandAddress1
+udf_getRandAddress2
+udf_getRandZip
+udf_getRandZipInt
+udf_getRandDOB
+
+**Stored Procedures:**
+
+usp_obfuscate_00
+usp_obfuscate_01
+usp_obfuscate_02
+usp_obfuscate_03
+     
