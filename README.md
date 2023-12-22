@@ -97,7 +97,7 @@ These scalar UDFs are used to get unique random values from the MASK.DUMMY_DATA 
 
 **Stored Procedures:**
 
-1. **usp_obfuscate_00**
+**1. usp_obfuscate_00**
 
 - is the brains of the entire process
 - retrieves the classified columns from sys.sensitivity_classifications or sys.extended_properties (in case of SQL Server versions below 2019)
@@ -106,19 +106,19 @@ These scalar UDFs are used to get unique random values from the MASK.DUMMY_DATA 
 - excludes data types outside of ('tinyint', 'smallint', 'int', 'bigint','float','decimal', 'numeric','char', 'nchar', 'varchar', 'nvarchar', 'text', 'ntext', 'date', 'datetime', 'datetime2', 
   'smalldatetime', 'datetimeoffset'),example: xml, varbinary sql_variant etc.
   
-1. **usp_obfuscate_01**
+**2. usp_obfuscate_01**
 
 - populates the logging table [MASK].[DataObfuscateList] with update scripts and filter conditions
 - adds in the rowcount of the tables to be anonymized
 - excludes any tables with rowcount=0
   
-1. **usp_obfuscate_02**
+**3. usp_obfuscate_02**
 
 - performs the anonymization by executing the update statements
 - logs the progress in the table [MASK].[DataObfuscateList]
 - allows to be run for specific tables as well (or in case of failures)
   
-1. **usp_obfuscate_03**
+**4. usp_obfuscate_03**
 
 - this is the final procedure used to check the final status of the process (completed successfully or failed and needs to be re-run)
      
