@@ -41,7 +41,7 @@ The script InstallALL_usp_obfuscate.sql installs a set of database objects (tabl
 
 - DUMMY_DATA
 
-  (is used to store as the name suggests dummy or fake PII and sensitive data which is what the target database is masked with. I have used https://www.mockaroo.com/ to generate the 
+  (is used to store as the name suggests dummy or fake PII and sensitive data which is what the target database is masked with. I have used https://www.mockaroo.com/ to generate 5k rows of 
    dummy data.)
 - DataMaskingExclusionList
 
@@ -55,10 +55,13 @@ The script InstallALL_usp_obfuscate.sql installs a set of database objects (tabl
 
 **Views:**
 
+These views are used to generate random numbers which are then used to get random dummy data values from table MASK.DUMMY_DATA
 - vw_getNewID
 - vw_getRandID
 
 **Scalar UDFs:**
+
+These scalar UDFs are used to get unique random values from the MASK.DUMMY_DATA table corresponding to the length of the target column data type
 
 - udf_getRandIPAddr
 - udf_getRandUsername
