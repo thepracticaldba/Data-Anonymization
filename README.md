@@ -22,7 +22,7 @@ Applying data classifications to the database stores the information in metadata
 * Azure SQL DB (with database compatibility =130 or higher)
 + Azure SQL Managed Instance
 
-## Steps to install the data anonymization procedures
+## Steps to implement the data anonymization process
 
 - Enable and implement Microsoft's Data Discovery and Classifications feature
 - Execute the script **InstallALL_usp_obfuscate.sql** in your target database (example: copy of Production database) which needs to be anonymized
