@@ -40,13 +40,17 @@ The script InstallALL_usp_obfuscate.sql installs a set of database objects (tabl
 **Tables:**
 
 - DUMMY_DATA
+
   (is used to store as the name suggests dummy or fake PII and sensitive data which is what the target database is masked with. I have used https://www.mockaroo.com/ to generate the 
    dummy data.)
 - DataMaskingExclusionList
+
   (allows us to exclude specific tables or columns by inserting entries)
 - DataMaskingScripts
+
   (stores the update code snippets and filter conditions for identified tables to be anonymized)
 - DataObfuscateList
+
   (is the logging table which has the complete update code alongwith rowcounts, start and finish times, status and error messages if any)
 
 **Views:**
