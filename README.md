@@ -9,4 +9,14 @@ https://learn.microsoft.com/en-us/sql/relational-databases/security/sql-data-dis
 
 https://learn.microsoft.com/en-us/azure/azure-sql/database/data-discovery-and-classification-overview?view=azuresql
 
+Azure also provides the option to customize the Data classification Labels and Information types via a feature called SQL information protection policy.
+
+SQL information protection's data discovery and classification mechanism provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your databases. You can customize the policy, according to your organization's needs. This is available under Microsoft defender for cloud and when selected, it applies at the tenant level.
+
 Applying data classifications to the database stores the information in metadata tables and allows it to be retrieved which this process leverages to dynamically anonymize the identified tables and their columns.
+
+**The Anonymization Procedures run on:**
+
+SQL Server 2016, 2017, 2019, 2022
+Azure SQL DB (with database compatibility =130 or higher)
+Azure SQL Managed Instance
