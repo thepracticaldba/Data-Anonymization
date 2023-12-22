@@ -39,54 +39,54 @@ The script InstallALL_usp_obfuscate.sql installs a set of database objects (tabl
 
 **Tables:**
 
-DUMMY_DATA
-DataMaskingExclusionList
-DataMaskingScripts
-DataObfuscateList
+- DUMMY_DATA
+- DataMaskingExclusionList
+- DataMaskingScripts
+- DataObfuscateList
 
 **Views:**
 
-vw_getNewID
-vw_getRandID
+- vw_getNewID
+- vw_getRandID
 
 **Scalar UDFs:**
 
-udf_getRandIPAddr
-udf_getRandUsername
-udf_getRandpwd
-udf_getRandmarks
-udf_getRandBankNum
-udf_getRandExpiryDate
-udf_getRandFirstName
-udf_getRandLastName
-udf_getRandURL
-udf_getRandPhoneNum
-udf_getRandMobNum
-udf_getRandCCNum
-udf_getRandCCType
-udf_getRandAmount
-udf_getRandAccID
-udf_getRandBankID
-udf_getRandSSN
-udf_getRandHealthRecord
-udf_getRandHealthNum
-udf_getRandPhoneNum_INT
-udf_getRandMobileNum_INT
-udf_getRandExpDate_Quantity
-udf_getRandEmail
-udf_getRandTown
-udf_getRandState
-udf_getRandCountry
-udf_getRandAddress1
-udf_getRandAddress2
-udf_getRandZip
-udf_getRandZipInt
-udf_getRandDOB
+- udf_getRandIPAddr
+- udf_getRandUsername
+- udf_getRandpwd
+- udf_getRandmarks
+- udf_getRandBankNum
+- udf_getRandExpiryDate
+- udf_getRandFirstName
+- udf_getRandLastName
+- udf_getRandURL
+- udf_getRandPhoneNum
+- udf_getRandMobNum
+- udf_getRandCCNum
+- udf_getRandCCType
+- udf_getRandAmount
+- udf_getRandAccID
+- udf_getRandBankID
+- udf_getRandSSN
+- udf_getRandHealthRecord
+- udf_getRandHealthNum
+- udf_getRandPhoneNum_INT
+- udf_getRandMobileNum_INT
+- udf_getRandExpDate_Quantity
+- udf_getRandEmail
+- udf_getRandTown
+- udf_getRandState
+- udf_getRandCountry
+- udf_getRandAddress1
+- udf_getRandAddress2
+- udf_getRandZip
+- udf_getRandZipInt
+- udf_getRandDOB
 
 **Stored Procedures:**
 
-usp_obfuscate_00
-usp_obfuscate_01
-usp_obfuscate_02
-usp_obfuscate_03
+- usp_obfuscate_00
+- usp_obfuscate_01
+- usp_obfuscate_02
+- usp_obfuscate_03
      
