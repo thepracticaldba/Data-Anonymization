@@ -48,10 +48,10 @@ The script InstallALL_usp_obfuscate.sql installs a set of database objects (tabl
   (allows us to exclude specific tables or columns by inserting entries)
 - DataMaskingScripts
 
-  (stores the update code snippets and filter conditions for identified tables to be anonymized)
+  (created during execution of the procedure usp_obfuscate_00, stores the update code snippets and filter conditions for identified tables to be anonymized)
 - DataObfuscateList
 
-  (is the logging table which has the complete update code alongwith rowcounts, start and finish times, status and error messages if any)
+  (created during execution of the procedure usp_obfuscate_01, is the logging table which has the complete update code alongwith rowcounts, start and finish times, status and error messages if any)
 
 **Views:**
 
